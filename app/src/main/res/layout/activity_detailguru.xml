@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_app"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+            android:paddingLeft="20dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@android:color/background_light">
+
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/anom"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp" />
+
+        <ImageView
+            android:id="@+id/icon_user"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/ic_user"
+            android:tint="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/et_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Anom Sejogati, S. Kom"
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/icon_nik"
+            android:layout_alignLeft="@+id/vuser"
+            android:layout_alignStart="@+id/vuser"
+            android:layout_marginBottom="12dp" />
+        <View
+            android:id="@+id/vuser"
+            android:layout_width="215dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="@color/colorAccent"
+            android:visibility="visible"
+            android:layout_below="@+id/et_user"/>
+
+        <ImageView
+            android:id="@+id/icon_nik"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_person"
+            android:tint="@color/colorPrimary"
+            android:layout_below="@+id/icon_user"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/et_nikguru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="3326131212980000"
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/icon_alamat"
+            android:layout_alignLeft="@+id/vnik"
+            android:layout_alignStart="@+id/vnik"
+            android:layout_marginBottom="12dp" />
+        <View
+            android:id="@+id/vnik"
+            android:layout_width="215dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="@color/colorAccent"
+            android:visibility="visible"
+            android:layout_below="@+id/et_nikguru"/>
+
+        <ImageView
+            android:id="@+id/icon_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_place"
+            android:tint="@color/colorPrimary"
+            android:layout_below="@+id/icon_nik"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/et_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Sapugarut, Buaran "
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/icon_pendidikan"
+            android:layout_alignLeft="@+id/valamat"
+            android:layout_alignStart="@+id/valamat"
+            android:layout_marginBottom="12dp" />
+        <View
+            android:id="@+id/valamat"
+            android:layout_width="215dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="@color/colorAccent"
+            android:visibility="visible"
+            android:layout_below="@+id/et_alamat"/>
+
+        <ImageView
+            android:id="@+id/icon_pendidikan"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_library_books"
+            android:tint="@color/colorPrimary"
+            android:layout_below="@+id/icon_alamat"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/et_pendidikan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="S1 - Teknik Informatika "
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/icon_jurusan"
+            android:layout_alignLeft="@+id/vpendidikan"
+            android:layout_alignStart="@+id/vpendidikan"
+            android:layout_marginBottom="12dp" />
+        <View
+            android:id="@+id/vpendidikan"
+            android:layout_width="215dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="@color/colorAccent"
+            android:visibility="visible"
+            android:layout_below="@+id/et_pendidikan"/>
+
+        <ImageView
+            android:id="@+id/icon_jurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_book"
+            android:tint="@color/colorPrimary"
+            android:layout_below="@+id/icon_pendidikan"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/et_jurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Bahasa Inggris "
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/icon_pt"
+            android:layout_alignLeft="@+id/vjurusan"
+            android:layout_alignStart="@+id/vjurusan"
+            android:layout_marginBottom="12dp" />
+        <View
+            android:id="@+id/vjurusan"
+            android:layout_width="215dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="@color/colorAccent"
+            android:visibility="visible"
+            android:layout_below="@+id/et_jurusan"/>
+
+        <ImageView
+            android:id="@+id/icon_pt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_school"
+            android:tint="@color/colorPrimary"
+            android:layout_below="@+id/icon_jurusan"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/et_pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="STMIK WIDYA PRATAMA "
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/icon_ket"
+            android:layout_alignLeft="@+id/vpt"
+            android:layout_alignStart="@+id/vpt"
+            android:layout_marginBottom="12dp" />
+        <View
+            android:id="@+id/vpt"
+            android:layout_width="215dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="@color/colorAccent"
+            android:visibility="visible"
+            android:layout_below="@+id/et_pt"/>
+
+        <ImageView
+            android:id="@+id/icon_ket"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_description"
+            android:tint="@color/colorPrimary"
+            android:layout_below="@+id/icon_pt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/et_ket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Keterangan "
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/icon_available"
+            android:layout_alignLeft="@+id/vpt"
+            android:layout_alignStart="@+id/vpt"
+            android:layout_marginBottom="12dp" />
+        <View
+            android:id="@+id/vket"
+            android:layout_width="215dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="@color/colorAccent"
+            android:visibility="visible"
+            android:layout_below="@+id/et_ket"/>
+
+        <ImageView
+            android:id="@+id/icon_available"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_check"
+            android:tint="@color/colorPrimary"
+            android:layout_below="@+id/icon_ket"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/et_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Available On "
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:layout_above="@+id/button_pilih"
+            android:layout_alignLeft="@+id/vavailable"
+            android:layout_alignStart="@+id/vavailable"
+            android:layout_marginBottom="12dp" />
+        <View
+            android:id="@+id/vavailable"
+            android:layout_width="215dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="@color/colorAccent"
+            android:visibility="visible"
+            android:layout_below="@+id/et_available"/>
+
+        <Button
+            android:id="@+id/button_pilih"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/icon_available"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/colorPrimary"
+            android:onClick="pemesanan"
+            android:text="Pilih"
+            android:textSize="40sp"
+            android:textColor="@color/textColorPrimary" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

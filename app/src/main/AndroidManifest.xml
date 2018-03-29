@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.higuru.com.hi_guru">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.misbahul.lesgo.permission.MAP_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hi_guru"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/hi_guru"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- Menghubungkan SplashscreenActivity ke activity_splashscreen -->
+        <activity
+            android:name=".Utama.SplashscreenActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Menghubungkan LoginActivity ke activity_login -->
+        <activity
+            android:name=".Utama.LoginActivity"
+            android:background="@color/colorPrimaryTutor"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <!-- Menghubungkan RegisterActivity ke activity_register -->
+        <activity
+            android:name=".Utama.RegisterActivity"
+            android:background="@color/colorPrimaryTutor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Guru.CbSpinner" />
+
+        <!--Menghubungkan Home ke activity_home -->
+        <activity
+            android:name=".Utama.Home"
+            android:label="@string/app_home"/>
+
+        <!--Menghubungkan Guru ke activity_guru -->
+        <activity android:name=".Guru.Guru"/>
+        <!--Menghubungkan Contact ke activity_contact -->
+        <activity
+            android:name=".Utama.Contact"
+            android:label="@string/app_contact"/>
+        <!--Menghubungkan Private ke activity_private -->
+        <activity
+            android:name=".Utama.Private"
+            android:label="@string/app_private"/>
+        <!--Menghubungkan Vote ke activity_vote -->
+        <activity
+            android:name=".Utama.Vote"
+            android:label="@string/app_vote"/>
+        <!--Menghubungkan profile ke activity_profile -->
+        <activity
+            android:name=".Profil.Profile"
+            android:label="@string/app_profile"/>
+        <!--Menghubungkan TampilGuru ke activity_tampilguru -->
+        <activity android:name=".Guru.TampilGuru"/>
+        <!--Menghubungkan EditProfile ke activity_editprofile -->
+        <activity android:name=".Profil.EditProfile"
+            android:label="@string/app_edit_profile"/>
+        <!--Menghubungkan DetailGuru ke activity_detailguru -->
+        <activity
+            android:name=".DetailGuru.DetailGuru"
+            android:label="@string/app_detailguru"/>
+        <activity
+            android:name=".DetailGuru.DetailGuru2"
+            android:label="@string/app_detailguru"/>
+        <activity
+            android:name=".DetailGuru.DetailGuru3"
+            android:label="@string/app_detailguru"/>
+        <activity
+            android:name=".DetailGuru.DetailGuru4"
+            android:label="@string/app_detailguru"/>
+        <activity
+            android:name=".DetailGuru.DetailGuru5"
+            android:label="@string/app_detailguru"/>
+        <activity
+            android:name=".DetailGuru.DetailGuru6"
+            android:label="@string/app_detailguru"/>
+        <activity
+            android:name=".Pemesanan.Pemesanan"
+            android:label="@string/app_pemesanan"/>
+        <activity
+            android:name=".Pemesanan.Pemesanan2"
+            android:label="@string/app_pemesanan"/>
+        <activity
+            android:name=".Pemesanan.Pemesanan3"
+            android:label="@string/app_pemesanan"/>
+        <activity
+            android:name=".Pemesanan.Pemesanan4"
+            android:label="@string/app_pemesanan"/>
+        <activity
+            android:name=".Pemesanan.Pemesanan5"
+            android:label="@string/app_pemesanan"/>
+        <activity
+            android:name=".Pemesanan.Pemesanan6"
+            android:label="@string/app_pemesanan"/>
+        <activity
+            android:name=".Utama.AboutUs"
+            android:label="@string/action_aboutus"/>
+
+    </application>
+
+</manifest>

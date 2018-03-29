@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_app"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_red_light"
+        android:paddingLeft="50dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@android:color/background_light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_weight="0.08"
+        android:background="@android:color/holo_red_light"
+        android:onClick="home"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="130dp"
+        android:layout_height="115dp"
+        app:srcCompat="@drawable/default_avatar"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_editprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profil"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewProfile" />
+
+    <ImageView
+        android:id="@+id/icon_user"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="3dp"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_user"
+        android:layout_alignTop="@+id/et_nama"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Maman"
+        android:layout_above="@+id/et_nik"
+        android:layout_toRightOf="@+id/back"
+        android:layout_toEndOf="@+id/back" />
+
+    <ImageView
+        android:id="@+id/icon_nik"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_person"
+        android:layout_alignBottom="@+id/et_nik"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_nik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="161530000 "
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/et_nama"
+        android:layout_alignStart="@+id/et_nama" />
+
+    <ImageView
+        android:id="@+id/icon_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_place"
+        android:layout_below="@+id/et_nik"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tanjung Kulon, Kajen "
+        android:layout_alignBottom="@+id/icon_alamat"
+        android:layout_alignLeft="@+id/et_nik"
+        android:layout_alignStart="@+id/et_nik" />
+
+    <ImageView
+        android:id="@+id/icon_email"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:padding="4dp"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_mail"
+        android:layout_alignTop="@+id/et_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/et_email" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="maman@gmail.com"
+        android:layout_below="@+id/et_alamat"
+        android:layout_alignLeft="@+id/et_alamat"
+        android:layout_alignStart="@+id/et_alamat" />
+
+    <ImageView
+        android:id="@+id/icon_nope"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_phone"
+        android:layout_alignTop="@+id/et_nope"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_nope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="085764534567"
+        android:layout_below="@+id/icon_email"
+        android:layout_alignLeft="@+id/et_email"
+        android:layout_alignStart="@+id/et_email" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Simpan"
+        android:textSize="40sp"
+        android:textColor="@color/textColorPrimary"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/icon_nope"
+        android:layout_alignLeft="@+id/et_nope"
+        android:layout_alignStart="@+id/et_nope" />
+
+    <Button
+        android:id="@+id/btnBatal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Batal"
+        android:textSize="40sp"
+        android:textColor="@color/textColorPrimary"
+        android:layout_alignBaseline="@+id/btnSimpan"
+        android:layout_alignBottom="@+id/btnSimpan"
+        android:layout_alignLeft="@+id/tv_editprofile"
+        android:layout_alignStart="@+id/tv_editprofile"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

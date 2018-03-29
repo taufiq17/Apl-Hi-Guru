@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_app"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:paddingLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@android:color/background_light">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:text="Selamat Datang Siswa"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewTingkat"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Tingkat"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:layout_below="@+id/textViewWelcome"
+        android:layout_alignLeft="@+id/back"
+        android:layout_alignStart="@+id/back" />
+
+    <Spinner
+        android:id="@+id/SpinnerTingkat"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/tingkat"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/textViewTingkat"
+        android:layout_alignLeft="@+id/textViewTingkat"
+        android:layout_alignStart="@+id/textViewTingkat" />
+
+    <TextView
+        android:id="@+id/textViewMapel"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/SpinnerMapel"
+        android:layout_alignLeft="@+id/SpinnerMapel"
+        android:layout_alignStart="@+id/SpinnerMapel"
+        android:layout_marginBottom="26dp"
+        android:text="Mapel"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/SpinnerMapel"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:entries="@array/mapel"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/SpinnerTingkat"
+        android:layout_alignLeft="@+id/SpinnerTingkat"
+        android:layout_alignStart="@+id/SpinnerTingkat" />
+
+    <Button
+        android:id="@+id/buttonPilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Pilih"
+        android:textColor="@color/textColorPrimary"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/textViewMapel"
+        android:layout_alignLeft="@+id/SpinnerMapel"
+        android:layout_alignStart="@+id/SpinnerMapel"
+        android:onClick="tampilguru"/>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:background="@android:color/holo_red_light"
+        android:onClick="home"
+        app:srcCompat="@drawable/ic_back"
+        />
+
+</RelativeLayout>

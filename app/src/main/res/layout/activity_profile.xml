@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_app"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_red_light"
+        android:paddingLeft="50dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@android:color/background_light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_weight="0.08"
+        android:background="@android:color/holo_red_light"
+        android:onClick="home"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/default_avatar"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informasi Umum"
+        android:textSize="20sp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/imageViewProfile"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/icon_user"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/ic_user"
+        android:tint="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/et_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Maman "
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/icon_nik"
+        android:layout_alignLeft="@+id/vuser"
+        android:layout_alignStart="@+id/vuser"
+        android:layout_marginBottom="12dp" />
+    <View
+        android:id="@+id/vuser"
+        android:layout_width="215dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        android:layout_below="@+id/et_user"/>
+
+    <ImageView
+        android:id="@+id/icon_nik"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_person"
+        android:tint="@color/colorPrimary"
+        android:layout_below="@+id/icon_user"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/et_nikguru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="161530000 "
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/icon_alamat"
+        android:layout_alignLeft="@+id/vnik"
+        android:layout_alignStart="@+id/vnik"
+        android:layout_marginBottom="12dp" />
+    <View
+        android:id="@+id/vnik"
+        android:layout_width="215dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        android:layout_below="@+id/et_nikguru"/>
+
+    <ImageView
+        android:id="@+id/icon_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_place"
+        android:tint="@color/colorPrimary"
+        android:layout_below="@+id/icon_nik"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/et_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tanjung Kulon, Kajen"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/icon_email"
+        android:layout_alignLeft="@+id/valamat"
+        android:layout_alignStart="@+id/valamat"
+        android:layout_marginBottom="12dp" />
+    <View
+        android:id="@+id/valamat"
+        android:layout_width="215dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        android:layout_below="@+id/et_alamat"/>
+
+    <ImageView
+        android:id="@+id/icon_email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_mail"
+        android:tint="@color/colorPrimary"
+        android:layout_below="@+id/icon_alamat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="maman@gmail.com "
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/icon_nope"
+        android:layout_alignLeft="@+id/vemail"
+        android:layout_alignStart="@+id/vemail"
+        android:layout_marginBottom="12dp" />
+    <View
+        android:id="@+id/vemail"
+        android:layout_width="215dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        android:layout_below="@+id/et_email"/>
+
+    <ImageView
+        android:id="@+id/icon_nope"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_phone"
+        android:tint="@color/colorPrimary"
+        android:layout_below="@+id/icon_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/et_nope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="085764534567 "
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="11dp"
+        android:layout_alignBottom="@+id/icon_nope"
+        android:layout_alignLeft="@+id/vnope"
+        android:layout_alignStart="@+id/vnope" />
+    <View
+        android:id="@+id/vnope"
+        android:layout_width="215dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        android:layout_below="@+id/et_nope"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:tint="@android:color/white"
+        app:fabSize="normal"
+        app:layout_collapseMode="parallax"
+        app:srcCompat="@drawable/ic_edit"
+        android:onClick="editprofil"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/vnope"
+        android:layout_alignRight="@+id/et_nope"
+        android:layout_alignEnd="@+id/et_nope" />
+
+</RelativeLayout>
+
+
+
+
+
+
+

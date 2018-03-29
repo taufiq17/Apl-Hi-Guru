@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@android:color/background_light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:id="@+id/tableRowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_guru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:drawableTop="@drawable/ic_school"
+                android:gravity="center|center_horizontal"
+                android:padding="1dp"
+                android:text="Hi - Guru"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:onClick="guru"/>
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:drawableTop="@drawable/ic_info"
+                android:gravity="center|center_horizontal"
+                android:padding="1dp"
+                android:text="Hi - Private"
+                android:textStyle="bold"
+                android:onClick="privat"/>
+
+
+            <Button
+                android:id="@+id/btnVote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:drawableTop="@drawable/ic_comment"
+                android:gravity="center|center_horizontal"
+                android:padding="1dp"
+                android:text="Hi - Vote"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:onClick="vote"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp">
+
+
+            <Button
+                android:id="@+id/btnContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:backgroundTint="@android:color/background_light"
+                android:drawableTop="@drawable/ic_perm_phone_msg"
+                android:gravity="center|center_horizontal"
+                android:padding="1dp"
+                android:text="Contact Admin"
+                android:textStyle="bold"
+                android:onClick="contact"/>
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:backgroundTint="@android:color/background_light"
+                android:drawableTop="@drawable/ic_user"
+                android:gravity="center|center_horizontal"
+                android:padding="1dp"
+                android:text="My Profile"
+                android:textStyle="bold"
+                android:onClick="profile"/>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:drawableTop="@drawable/ic_logout"
+                android:gravity="center|center_horizontal"
+                android:onClick="logout"
+                android:padding="1dp"
+                android:text="Logout"
+                android:textStyle="bold"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryTutor"
+        app:srcCompat="@drawable/higuru"
+        android:layout_above="@+id/tableLayout1"
+        android:layout_below="@+id/toolbar" />
+
+</RelativeLayout>

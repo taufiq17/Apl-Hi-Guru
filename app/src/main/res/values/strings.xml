@@ -1,0 +1,63 @@
+<resources>
+    <!--toolbar-->
+    <string name="app_name">Hi - Guru</string>
+    <string name="app_home">Beranda</string>
+    <string name="app_contact">Contact Admin</string>
+    <string name="app_private">Hi - Private</string>
+    <string name="app_profile">My Profile</string>
+    <string name="app_edit_profile">Edit Profile</string>
+    <string name="app_vote">Hi - Vote</string>
+    <string name="app_logo">Hi - Guru</string>
+    <string name="app_detailguru">Detail Guru</string>
+    <string name="app_pemesanan">Pemesanan</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="action_aboutus">Tentang Kami</string>
+    <string name="action_logout">Keluar</string>
+
+    <!--login-->
+    <string name="str_password">Kata Sandi</string>
+    <string name="str_telp">No. Telepon</string>
+    <string name="str_masuk">Masuk</string>
+    <string name="str_blm_punya_akun">Belum punya akun? Daftar</string>
+
+    <!--register-->
+    <string name="str_daftarsiswa">DAFTAR SEBAGAI SISWA</string>
+    <string name="str_namalengkap">Nama Lengkap</string>
+    <string name="str_nik">NIK</string>
+    <string name="str_alamat">Alamat</string>
+    <string name="str_email">Email</string>
+    <string name="str_tos">Setuju dengan persyaratan berlaku</string>
+    <string name="str_daftar">DAFTAR</string>
+    <string name="str_sdh_punya_akun">Sudah punya akun? Masuk</string>
+
+    <!-- dashboard -->
+    <string name="str_higuru">Hi-Guru</string>
+    <string name="str_contact">Contact Admin</string>
+    <string name="str_private">Hi-Private</string>
+    <string name="str_vote">Hi-Vote</string>
+    <string name="str_profile">My Profile</string>
+    <string name="str_logout">Logout</string>
+
+    <!--CBSpinner tingkat-->
+    <string-array name="tingkat">
+        <item>-- Tingkat --</item>
+        <item>SD/MI</item>
+        <item>SMP/Mts</item>
+        <item>SMA/SMK/MA/MAK</item>
+        <item>Mahasiswa</item>
+        <item>Umum</item>
+    </string-array>
+
+    <!--CBSpinner mapel-->
+    <string-array name="mapel">
+        <item>-- Mata Pelajaran --</item>
+        <item>Bahasa Indonesia</item>
+        <item>Bahasa Inggris</item>
+        <item>Bahasa Arab</item>
+        <item>Matematika</item>
+        <item>Ilmu Pengetahuan Alam</item>
+        <item>Ilmu Pengetahuan Sosial</item>
+        <item>Komputer</item>
+    </string-array>
+
+</resources>

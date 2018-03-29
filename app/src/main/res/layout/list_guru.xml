@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="55dp"
+        android:layout_height="70dp"
+        android:layout_margin="3dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/namaguru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toEndOf="@+id/icon" />
+    <TextView
+        android:id="@+id/mapel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:layout_below="@id/namaguru"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/ic_book"/>
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:layout_below="@id/mapel"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/ic_place"/>
+
+</RelativeLayout>

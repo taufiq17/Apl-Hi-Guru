@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:paddingLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@android:color/background_light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/DlmProses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Dalam Proses"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/Selesai"
+        android:layout_alignBottom="@+id/Selesai"
+        android:layout_alignLeft="@+id/back"
+        android:layout_alignStart="@+id/back" />
+
+    <EditText
+        android:id="@+id/Selesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:hint="Selesai"
+        android:textSize="25sp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_toRightOf="@+id/DlmProses"
+        android:layout_toEndOf="@+id/DlmProses" />
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:background="@android:color/holo_red_light"
+        android:onClick="home"
+        app:srcCompat="@drawable/ic_back" />
+</RelativeLayout>
